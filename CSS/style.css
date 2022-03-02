@@ -8,7 +8,7 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
-
+  background-image: url(/image/earth-2254769_1920.jpg);
   margin: 0%;
 }
 .container {
@@ -48,4 +48,20 @@ body {
   text-transform: uppercase;
   padding: 0 15px;
   background-color: rgba(223, 8, 8, 0.4);
+}
+.intro-left {
+  width: 40%;
+}
+.intro-img {
+  border-radius: 50%;
+}
+.intro-right {
+  width: 50%;
+}
+.intro-inner {
+  display: flex;
+  padding: 4em 0;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
