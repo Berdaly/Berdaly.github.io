@@ -12,7 +12,8 @@ body {
   margin: 0%;
 }
 .section-title {
-  text
+  text-transform: uppercase;
+  text-align: center;
 }
 .container {
   width: 1140px;
@@ -67,4 +68,15 @@ body {
   gap: 30px;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+.contacts ul {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
 }
