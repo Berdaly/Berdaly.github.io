@@ -11,6 +11,9 @@ body {
   background-image: url(/image/earth-2254769_1920.jpg);
   margin: 0%;
 }
+.section {
+  padding: 50px;
+}
 .section-title {
   text-transform: uppercase;
   text-align: center;
@@ -23,6 +26,7 @@ body {
 .header a {
   color: rgb(254, 253, 255);
   text-decoration: none;
+  border-radius: 6px;
 }
 
 .main-navigation {
@@ -70,6 +74,10 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+.contacts li {
+  align-items: center;
+  justify-content: center;
+}
 .contacts ul {
   display: flex;
   gap: 100px;
@@ -79,4 +87,32 @@ body {
   padding: 0;
   list-style: none;
   flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.skills ul {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 40px;
+  list-style: none;
+  flex-wrap: wrap;
+  background-color: blue;
+}
+.skills li {
+  background-color: rgba(223, 8, 8, 0.4);
+  border-radius: 5px;
+}
+.code-example pre {
+  display: flex;
+  width: 50%;
+  margin: 0%;
+  text-align: left;
+  color: black;
+  background-color: blue;
+  border-radius: 8px;
+}
+.code-example code {
+  justify-content: center;
 }
