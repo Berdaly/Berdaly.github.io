@@ -6,10 +6,13 @@ html {
 *:before *:after {
   box-sizing: inherit;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
-  background-image: url(/image/earth-2254769_1920.jpg);
+  background-image: url(/image/milky-way-6496937_1920.jpg);
+  background-position: top;
   margin: 0%;
+  color: #fff;
 }
 .section {
   padding: 50px;
@@ -30,17 +33,20 @@ body {
 }
 
 .main-navigation {
-  background-image: url(/image/earth.jpg);
+  /* background-image: url(/image/earth.jpg);*/
 
   background-position: center;
 
-  color: rgb(247, 8, 8);
+  color: rgb(60, 8, 247);
   padding: 10px 0;
 }
 
 .logo {
   float: left;
   color: #fff;
+  background-color: rgba(47, 8, 223, 0.4);
+  padding: 5px 15px;
+  text-transform: uppercase;
 }
 .menu {
   margin: 0;
@@ -54,8 +60,8 @@ body {
 }
 .menu-link {
   text-transform: uppercase;
-  padding: 0 15px;
-  background-color: rgba(223, 8, 8, 0.4);
+  padding: 5px 15px;
+  background-color: rgba(47, 8, 223, 0.4);
 }
 .intro-left {
   width: 40%;
@@ -64,7 +70,11 @@ body {
   border-radius: 50%;
 }
 .intro-right {
+  color: #fff;
   width: 50%;
+  background-color: rgba(47, 8, 223, 0.4);
+  padding: 5px 15px;
+  border-radius: 10px;
 }
 .intro-inner {
   display: flex;
@@ -74,11 +84,31 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+.li {
+  /*background-color: rgba(223, 8, 8, 1);*/
+  border-radius: 5px;
+}
 .contacts li {
   align-items: center;
   justify-content: center;
 }
-.contacts ul {
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  background-color: rgb(6, 102, 30);
+  background-size: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.contacts ul,
+.skills ul,
+.code-example pre,
+.portfolio,
+.languages,
+.education {
   display: flex;
   gap: 100px;
   justify-content: center;
@@ -88,31 +118,25 @@ body {
   list-style: none;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  background-color: rgba(47, 8, 223, 0.4);
+  padding: 5px 15px;
+  color: #fff;
+  text-decoration: none;
 }
-.skills ul {
+.footer {
   display: flex;
-  gap: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fa-solid {
+  font-size: 10em;
+}
+.portfoliocolumns {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: auto auto;
+  grid-gap: 200px;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 40px;
-  list-style: none;
-  flex-wrap: wrap;
-  background-color: blue;
-}
-.skills li {
-  background-color: rgba(223, 8, 8, 0.4);
-  border-radius: 5px;
-}
-.code-example pre {
-  display: flex;
-  width: 50%;
-  margin: 0%;
-  text-align: left;
-  color: black;
-  background-color: blue;
-  border-radius: 8px;
-}
-.code-example code {
-  justify-content: center;
 }
